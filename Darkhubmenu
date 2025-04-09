@@ -618,7 +618,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local Darkhub = useStudio and script.Parent:FindFirstChild('Darkhub') or game:GetObjects("rbxassetid://74769762665234")[1]
+local Darkhub = useStudio and script.Parent:FindFirstChild('Darkhub') or game:GetObjects("rbxassetid://84001829538260")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -638,7 +638,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, Darkhub = Darkhub, useStudio and script.Parent:FindFirstChild('Darkhub') or game:GetObjects("rbxassetid://74769762665234")[1]
+	toDestroy, Darkhub = Darkhub, useStudio and script.Parent:FindFirstChild('Darkhub') or game:GetObjects("rbxassetid://84001829538260")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
